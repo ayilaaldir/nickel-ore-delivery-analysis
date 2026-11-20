@@ -1,0 +1,5 @@
+source_row_id,decision,reason,corrected_date,corrected_supplier_id,corrected_stockpile_id,corrected_reported_wmt,corrected_weighbridge_wmt,corrected_moisture_fraction,corrected_grade_fraction,reviewer_notes
+R000021,Approve,Synthetic supplier confirmation in raw record_note identifies S01.,,S01,,,,,,
+R000041,Approve,Synthetic retest in raw record_note confirms moisture 0.320000.,,,,,,0.32,,
+R000307,Reject,Demonstration adjudication: retain R000081 and reject conflicting submission.,,,,,,,,
+R000091,Approve,Demonstration weight difference reviewed; retain weighbridge basis; no imputation.,,,,,,,,

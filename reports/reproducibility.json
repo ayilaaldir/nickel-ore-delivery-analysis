@@ -1,0 +1,13 @@
+{
+  "seed": 20260901,
+  "identical": true,
+  "sha256": {
+    "data\\raw_deliveries.csv": "728a809f5cc3e88917529696f7ba922ed8a612827ade252a2c5d86ba49960300",
+    "data\\review_decisions.csv": "8f67252a738f0be87cf65f0c6fa564b109b6c8298c3c88845e071533b7af4163",
+    "data\\stockpile_reference.csv": "6dd1971c655103ab3ed07303dc8918eac42ab90881884943e00f04f33d5cc61d",
+    "data\\supplier_reference.csv": "37dc90bd73804a7124b105671fe737b3eaa528065e6f8b94b45fd208e004af9c",
+    "data\\workbook_input.json": "0d603aa0f0effce6ab4b9e4f33e4178e2bc815a0972ff449df469c89ce32efe3",
+    "evaluation\\clean_ground_truth.csv": "0d6a9fe709cd3f45f0889433d6d243d27d11672290fa26e2d0f3e6c4e137d4bc",
+    "evaluation\\issue_manifest.csv": "9e4b7cf939728bba5ca882a4b0ef2d0a18fef00ffe5d6b1a383a4b8940e26a8b"
+  }
+}

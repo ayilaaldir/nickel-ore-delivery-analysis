@@ -1,0 +1,5 @@
+# Reproduction only. Normal Excel workbook use needs no Python.
+openpyxl==3.1.5
+reportlab==4.4.9
+pypdf==6.21.4
+pypdfium2==5.13.0

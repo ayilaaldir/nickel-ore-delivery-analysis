@@ -1,0 +1,52 @@
+{
+  "tests": [
+    {
+      "name": "Saved XLSX import dashboard count",
+      "expected": 262,
+      "actual": 262,
+      "tolerance": 1e-7,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard WMT",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-7,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_date_filtered count",
+      "expected": 112,
+      "actual": 112,
+      "tolerance": 1e-7,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_date_filtered WMT",
+      "expected": 3666.257000000001,
+      "actual": 3666.257000000001,
+      "tolerance": 1e-7,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_filtered count",
+      "expected": 13,
+      "actual": 13,
+      "tolerance": 1e-7,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_filtered WMT",
+      "expected": 425.7679999999999,
+      "actual": 425.7679999999999,
+      "tolerance": 1e-7,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    }
+  ]
+}

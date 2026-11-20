@@ -1,0 +1,44 @@
+# Local environments and dependency folders
+.venv/
+venv/
+env/
+node_modules/
+
+# Temporary files, caches and logs
+tmp/
+temp/
+.cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.log
+*.tmp
+*.bak
+
+# Excel lock and recovery files
+~$*
+.~lock.*#
+*.xlk
+
+# Generated intermediate inputs and diagnostic artifacts
+data/workbook_input.json
+*.inspect.ndjson
+scripts/debug_engine.mjs
+
+# Distribute the complete archive through GitHub Releases
+NickelOps-Complete-Project.zip
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+credentials.json
+*.pem
+*.key
+*.pfx
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

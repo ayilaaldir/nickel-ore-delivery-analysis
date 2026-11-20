@@ -1,0 +1,23 @@
+{
+  "formula": "=SUMPRODUCT(('CLEAN DELIVERIES'!$H$7:$H$316<>\"Accepted\")*ISNUMBER('CLEAN DELIVERIES'!$J$7:$J$316))",
+  "actual": 0,
+  "passed": true,
+  "tests": [
+    {
+      "name": "QA ignores non-accepted empty formula results",
+      "expected": 0,
+      "actual": 0,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "QA detects a false numeric zero in non-accepted DMT",
+      "expected": 1,
+      "actual": 1,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    }
+  ]
+}

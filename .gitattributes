@@ -1,0 +1,5 @@
+# Preserve snapshot/export bytes so the published SHA256 manifest stays valid.
+* -text
+*.xlsx binary
+*.pdf binary
+*.png binary

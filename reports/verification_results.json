@@ -1,0 +1,1456 @@
+{
+  "synthetic": true,
+  "seed": 20260901,
+  "python": "3.11.9",
+  "openpyxl": "3.1.5",
+  "counts": {
+    "Accepted": 262,
+    "Unresolved": 41,
+    "Excluded duplicate": 6,
+    "Rejected": 1
+  },
+  "raw_count": 310,
+  "manifest_entries": 64,
+  "totals": {
+    "count": 262,
+    "wmt": 8542.046999999999,
+    "dmt": 5939.540275201996,
+    "contained_ni_t": 92.67833590526783,
+    "weighted_grade": 0.015603621090374028,
+    "weighted_moisture": 0.3046701481270242,
+    "weight_exceptions": 1
+  },
+  "scenario": {
+    "count": 262,
+    "wmt": 9396.251699999999,
+    "dmt": 6345.569268722197,
+    "contained_ni_t": 105.35917986042884,
+    "weighted_grade": 0.016603582026872264,
+    "weighted_moisture": 0.3246701481270241,
+    "weight_exceptions": 1
+  },
+  "moisture_only": {
+    "count": 262,
+    "wmt": 8542.046999999999,
+    "dmt": 5768.699335201998,
+    "contained_ni_t": 90.01237326518788,
+    "weighted_grade": 0.015603582026872264,
+    "weighted_moisture": 0.324670148127024,
+    "weight_exceptions": 1
+  },
+  "grade_only": {
+    "count": 262,
+    "wmt": 8542.046999999999,
+    "dmt": 5939.540275201996,
+    "contained_ni_t": 98.61787618046979,
+    "weighted_grade": 0.016603621090374023,
+    "weighted_moisture": 0.3046701481270242,
+    "weight_exceptions": 1
+  },
+  "volume_only": {
+    "count": 262,
+    "wmt": 9396.251699999999,
+    "dmt": 6533.4943027222,
+    "contained_ni_t": 101.94616949579455,
+    "weighted_grade": 0.01560362109037401,
+    "weighted_moisture": 0.30467014812702387,
+    "weight_exceptions": 1
+  },
+  "tests": [
+    {
+      "name": "Raw rows partition mutually exclusively",
+      "expected": 310,
+      "actual": 310,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Initial raw row count",
+      "expected": 310,
+      "actual": 310,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Ground-truth delivery count",
+      "expected": 300,
+      "actual": 300,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Every source_row_id is unique and stable",
+      "expected": 310,
+      "actual": 310,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Accepted business identifiers unique",
+      "expected": 262,
+      "actual": 262,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved workbook statuses agree for every source ID",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Accepted identifiers, reference IDs and dates agree with Python",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved workbook per-record WMT/DMT/Ni agrees with independent Python",
+      "expected": [],
+      "actual": [],
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "All non-accepted measurements remain blank, not zero",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved RAW DELIVERIES preserves every original field",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: count",
+      "expected": 262,
+      "actual": 262,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: weighted_grade",
+      "expected": 0.015603621090374028,
+      "actual": 0.015603621090374028,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.67833590526783,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: weighted_moisture",
+      "expected": 0.3046701481270242,
+      "actual": 0.3046701481270242,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved dashboard independent control: weight_exceptions",
+      "expected": 1,
+      "actual": 1,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved supplier summary reconciles wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.047,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved stockpile summary reconciles wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved date summary reconciles wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.047,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved supplier summary reconciles dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275202,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved stockpile summary reconciles dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved date summary reconciles dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275202,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved supplier summary reconciles contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.6783359052678,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved stockpile summary reconciles contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.6783359052678,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved date summary reconciles contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.6783359052678,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S01 independently agrees: count",
+      "expected": 67,
+      "actual": 67,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S01 independently agrees: wmt",
+      "expected": 2057.3869999999997,
+      "actual": 2057.3869999999997,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S01 independently agrees: dmt",
+      "expected": 1426.1468874889995,
+      "actual": 1426.1468874889995,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S01 independently agrees: contained_ni_t",
+      "expected": 22.341667541083652,
+      "actual": 22.341667541083652,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S01 independently agrees: weighted_grade",
+      "expected": 0.015665754865139013,
+      "actual": 0.015665754865139013,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S01 independently agrees: weighted_moisture",
+      "expected": 0.3068164193275258,
+      "actual": 0.3068164193275258,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S02 independently agrees: count",
+      "expected": 64,
+      "actual": 64,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S02 independently agrees: wmt",
+      "expected": 2105.891000000001,
+      "actual": 2105.891000000001,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S02 independently agrees: dmt",
+      "expected": 1474.3672531780003,
+      "actual": 1474.3672531780003,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S02 independently agrees: contained_ni_t",
+      "expected": 23.164419792947307,
+      "actual": 23.164419792947307,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S02 independently agrees: weighted_grade",
+      "expected": 0.015711431288925045,
+      "actual": 0.015711431288925045,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S02 independently agrees: weighted_moisture",
+      "expected": 0.2998843467311463,
+      "actual": 0.2998843467311463,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S03 independently agrees: count",
+      "expected": 66,
+      "actual": 66,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S03 independently agrees: wmt",
+      "expected": 2198.0179999999996,
+      "actual": 2198.0179999999996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S03 independently agrees: dmt",
+      "expected": 1530.9004446799997,
+      "actual": 1530.9004446799997,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S03 independently agrees: contained_ni_t",
+      "expected": 24.226219746278748,
+      "actual": 24.226219746278748,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S03 independently agrees: weighted_grade",
+      "expected": 0.015824817237767994,
+      "actual": 0.015824817237767994,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S03 independently agrees: weighted_moisture",
+      "expected": 0.30350868615270665,
+      "actual": 0.30350868615270665,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S04 independently agrees: count",
+      "expected": 65,
+      "actual": 65,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S04 independently agrees: wmt",
+      "expected": 2180.7510000000007,
+      "actual": 2180.7510000000007,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S04 independently agrees: dmt",
+      "expected": 1508.1256898549998,
+      "actual": 1508.1256898549998,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S04 independently agrees: contained_ni_t",
+      "expected": 22.9460288249581,
+      "actual": 22.9460288249581,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S04 independently agrees: weighted_grade",
+      "expected": 0.015214931341143234,
+      "actual": 0.015214931341143234,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "supplier S04 independently agrees: weighted_moisture",
+      "expected": 0.3084374649581729,
+      "actual": 0.3084374649581729,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P01 independently agrees: count",
+      "expected": 80,
+      "actual": 80,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P01 independently agrees: wmt",
+      "expected": 2604.295,
+      "actual": 2604.295,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P01 independently agrees: dmt",
+      "expected": 1818.7310964719995,
+      "actual": 1818.7310964719995,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P01 independently agrees: contained_ni_t",
+      "expected": 27.593555303847886,
+      "actual": 27.593555303847886,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P01 independently agrees: weighted_grade",
+      "expected": 0.015171871948180937,
+      "actual": 0.015171871948180937,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P01 independently agrees: weighted_moisture",
+      "expected": 0.30164167405305486,
+      "actual": 0.30164167405305486,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P02 independently agrees: count",
+      "expected": 103,
+      "actual": 103,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P02 independently agrees: wmt",
+      "expected": 3330.9749999999995,
+      "actual": 3330.9749999999995,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P02 independently agrees: dmt",
+      "expected": 2311.369705691,
+      "actual": 2311.369705691,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P02 independently agrees: contained_ni_t",
+      "expected": 36.67172472247107,
+      "actual": 36.67172472247107,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P02 independently agrees: weighted_grade",
+      "expected": 0.015865797943175778,
+      "actual": 0.015865797943175778,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P02 independently agrees: weighted_moisture",
+      "expected": 0.30609815273576046,
+      "actual": 0.30609815273576046,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P03 independently agrees: count",
+      "expected": 79,
+      "actual": 79,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P03 independently agrees: wmt",
+      "expected": 2606.777,
+      "actual": 2606.777,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P03 independently agrees: dmt",
+      "expected": 1809.4394730389997,
+      "actual": 1809.4394730389997,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P03 independently agrees: contained_ni_t",
+      "expected": 28.41305587894885,
+      "actual": 28.41305587894885,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P03 independently agrees: weighted_grade",
+      "expected": 0.015702683788161424,
+      "actual": 0.015702683788161424,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "stockpile P03 independently agrees: weighted_moisture",
+      "expected": 0.30587101503542513,
+      "actual": 0.30587101503542513,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Visible QA checks all pass",
+      "expected": 13,
+      "actual": 13,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "All injected manifest entries detected and handled as expected",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Independent manifest entry count",
+      "expected": 64,
+      "actual": 64,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Accepted normalized/corrected measurements agree with evaluation truth",
+      "expected": [],
+      "actual": [],
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Fixed-seed generation reproduces all data/evaluation bytes",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python zero scenario wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python +10% volume wmt",
+      "expected": 9396.251699999999,
+      "actual": 9396.251699999999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python zero scenario dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python +10% volume dmt",
+      "expected": 6533.494302722196,
+      "actual": 6533.4943027222,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python zero scenario contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.67833590526783,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python +10% volume contained_ni_t",
+      "expected": 101.94616949579462,
+      "actual": 101.94616949579455,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python moisture raises WMT-independent losses",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python grade leaves WMT and DMT unchanged",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Hand example scenario DMT: 110 x (1 - .32)",
+      "expected": 74.8,
+      "actual": 74.8,
+      "tolerance": 1e-12,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Hand example scenario theoretical Ni: 74.8 x .016",
+      "expected": 1.1968,
+      "actual": 1.1968,
+      "tolerance": 1e-12,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python invalid scenario blocked moisture",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python invalid scenario blocked grade",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Python invalid scenario blocked volume",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved compound scenario wmt",
+      "expected": 9396.251699999999,
+      "actual": 9396.251699999999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved compound scenario dmt",
+      "expected": 6345.569268722197,
+      "actual": 6345.569268722197,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved compound scenario contained_ni_t",
+      "expected": 105.35917986042884,
+      "actual": 105.35917986042884,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way -4 pp: dmt",
+      "expected": 6281.222155202002,
+      "actual": 6281.222155201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way -4 pp: contained_ni_t",
+      "expected": 98.01026118542784,
+      "actual": 98.01026118542784,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way -0.4 pp: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way -0.4 pp: contained_ni_t",
+      "expected": 68.92017480445985,
+      "actual": 68.92017480445985,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way -2 pp: dmt",
+      "expected": 6110.381215201997,
+      "actual": 6110.381215201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way -2 pp: contained_ni_t",
+      "expected": 95.34429854534783,
+      "actual": 95.34429854534783,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way -0.2 pp: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way -0.2 pp: contained_ni_t",
+      "expected": 80.7992553548638,
+      "actual": 80.79925535486383,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way +0 pp: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way +0 pp: contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.67833590526783,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way +0.0 pp: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way +0.0 pp: contained_ni_t",
+      "expected": 92.67833590526783,
+      "actual": 92.67833590526783,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way +2 pp: dmt",
+      "expected": 5768.699335201998,
+      "actual": 5768.699335201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way +2 pp: contained_ni_t",
+      "expected": 90.01237326518788,
+      "actual": 90.01237326518783,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way +0.2 pp: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way +0.2 pp: contained_ni_t",
+      "expected": 104.5574164556719,
+      "actual": 104.55741645567183,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way +4 pp: dmt",
+      "expected": 5597.858395202003,
+      "actual": 5597.858395201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Moisture one-way +4 pp: contained_ni_t",
+      "expected": 87.34641062510792,
+      "actual": 87.34641062510782,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way +0.4 pp: dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Grade one-way +0.4 pp: contained_ni_t",
+      "expected": 116.43649700607585,
+      "actual": 116.43649700607581,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Mutated selected scope independently agrees: count",
+      "expected": 13,
+      "actual": 13,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Mutated selected scope independently agrees: wmt",
+      "expected": 425.7679999999999,
+      "actual": 425.7679999999999,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Mutated selected scope independently agrees: dmt",
+      "expected": 296.702034535,
+      "actual": 296.702034535,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Mutated selected scope independently agrees: ni",
+      "expected": 4.5794682003273,
+      "actual": 4.5794682003273,
+      "tolerance": 1e-07,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Initial Python control wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Initial Python control dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Initial Python control ni",
+      "expected": 92.67833590526783,
+      "actual": 92.67833590526783,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Zero-change scenario wmt",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Zero-change scenario dmt",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Zero-change scenario ni",
+      "expected": 92.67833590526783,
+      "actual": 92.67833590526783,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Higher moisture reduces DMT",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Higher moisture reduces Ni",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Higher moisture leaves WMT",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Higher grade leaves WMT",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Higher grade leaves DMT",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Grade pp uses division by 100 once",
+      "expected": 98.61787618046982,
+      "actual": 98.61787618046979,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "10% volume scales wmt",
+      "expected": 9396.251699999999,
+      "actual": 9396.251699999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "10% volume scales dmt",
+      "expected": 6533.494302722196,
+      "actual": 6533.4943027222,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "10% volume scales ni",
+      "expected": 101.94616949579462,
+      "actual": 101.94616949579455,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Minus 100% volume valid",
+      "expected": 0,
+      "actual": 0,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Zero DMT grade unavailable",
+      "expected": "Unavailable",
+      "actual": "Unavailable",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Volume below -100% blocked",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Invalid scenario total unavailable",
+      "expected": "Unavailable",
+      "actual": "Unavailable",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Out-of-range moisture blocked",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Out-of-range grade blocked",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Blank assumption blocked",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Supplier/stockpile selector count",
+      "expected": 13,
+      "actual": 13,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Supplier/stockpile selector WMT",
+      "expected": 425.7679999999999,
+      "actual": 425.7679999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Filtered chart source reconciles",
+      "expected": 425.7679999999999,
+      "actual": 425.7679999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Filtered Ni chart source updates",
+      "expected": 4.5794682003273,
+      "actual": 4.5794682003273,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Reversed dates blocked",
+      "expected": true,
+      "actual": true,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Invalid scope KPI unavailable",
+      "expected": "Unavailable",
+      "actual": "Unavailable",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Keyed date correction accepts intended record",
+      "expected": "Accepted",
+      "actual": "Accepted",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Keyed correction increases count by one",
+      "expected": 263,
+      "actual": 263,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Neighboring row unchanged",
+      "expected": "Unresolved",
+      "actual": "Unresolved",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Correction without reason blocked",
+      "expected": "Unresolved",
+      "actual": "Unresolved",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Duplicate override keys block record",
+      "expected": "Unresolved",
+      "actual": "Unresolved",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Undocumented rejection keeps competing record blocked",
+      "expected": "Unresolved",
+      "actual": "Unresolved",
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Reordered correction register retains accepted count",
+      "expected": 262,
+      "actual": 262,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Reordered correction register retains DMT",
+      "expected": 5939.540275201996,
+      "actual": 5939.540275201996,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Keyed Hold decreases accepted population",
+      "expected": 261,
+      "actual": 261,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "All inputs restored",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "QA ignores non-accepted empty formula results",
+      "expected": 0,
+      "actual": 0,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "QA detects a false numeric zero in non-accepted DMT",
+      "expected": 1,
+      "actual": 1,
+      "tolerance": 0,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool"
+    },
+    {
+      "name": "Saved XLSX import dashboard count",
+      "expected": 262,
+      "actual": 262,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard WMT",
+      "expected": 8542.046999999999,
+      "actual": 8542.046999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_date_filtered count",
+      "expected": 112,
+      "actual": 112,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_date_filtered WMT",
+      "expected": 3666.257000000001,
+      "actual": 3666.257000000001,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_filtered count",
+      "expected": 13,
+      "actual": 13,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Saved XLSX import dashboard_filtered WMT",
+      "expected": 425.7679999999999,
+      "actual": 425.7679999999999,
+      "tolerance": 1e-07,
+      "result": "PASS",
+      "engine": "@oai/artifact-tool XLSX import/recalculation"
+    },
+    {
+      "name": "Runtime mutation tests all pass",
+      "expected": 0,
+      "actual": 0,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Delivered workbook contains no unexpected cached formula errors",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Production formulas never reference evaluation files",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Required native formula present: VLOOKUP",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Required native formula present: SUMIFS",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Required native formula present: IF",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "No external workbook links or macros",
+      "expected": [],
+      "actual": [],
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "No genuine PivotTables are falsely claimed",
+      "expected": 0,
+      "actual": 0,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Two native formula-backed charts installed",
+      "expected": 2,
+      "actual": 2,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Both native chart value axes start at zero",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Native chart sources point to formula cells in DASHBOARD",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Native Excel Tables installed",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "RAW DELIVERIES protection safeguard installed",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Raw-sheet protection metadata has one valid element",
+      "expected": 1,
+      "actual": 1,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    },
+    {
+      "name": "Named validation lists installed",
+      "expected": true,
+      "actual": true,
+      "tolerance": 0,
+      "engine": "Python 3 stdlib / openpyxl read-only",
+      "result": "PASS"
+    }
+  ],
+  "native_tables": 12,
+  "native_charts": 2,
+  "formula_cells": 21723
+}
